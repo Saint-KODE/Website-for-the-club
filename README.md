@@ -14,4 +14,4 @@ Welcome to the official repository for the **Coding Club Website!** This project
 - **Footer** with social media and contact links  
 - **Smooth animations** for an enhanced user experience
 
-  
+  To run the the code just, just download the zip file containing the code and run it using your prefer ide or text editor. Preferably visual studio code. This side consists of 4 pages you can run the home page and it will automatically link to the other pages using the naviagtion tool up top. There is an asset folder that you must not delete or change cause it holds all assets used in this project.
