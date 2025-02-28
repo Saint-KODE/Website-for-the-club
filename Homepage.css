@@ -1,0 +1,216 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px 0px 10px #00aaff;
+    transform: scale(1.1);
+}
+
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('ASSETS/HomePage.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    text-shadow: 0px 0px 15px rgba(0, 170, 255, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+.team {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 10px #00aaff;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 1.5s ease-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0px 0px 20px #00aaff;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h3, .card p {
+    margin: 5px 0;
+}
+
+.about-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-link:hover {
+    background: #0088cc;
+    transform: scale(1.1);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.social-links a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    text-shadow: 0px 0px 10px #00aaff;
+    transform: scale(1.1);
+}
+
+.email-link {
+    color: #00aaff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.email-link:hover {
+    text-shadow: 0px 0px 10px #00aaff;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
